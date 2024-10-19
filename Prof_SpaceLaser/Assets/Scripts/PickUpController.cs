@@ -33,4 +33,13 @@ public class PickUpController : MonoBehaviour
         Destroy(invIconGO);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        GameObject otherGO = other.gameObject;
+        
+        if(otherGO.tag == "Explo") {
+            pickUp();
+        }
+    }    
+
 }

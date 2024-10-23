@@ -9,7 +9,7 @@ public class CrossHairController : MonoBehaviour
     public Vector3 laserOffset;
     public LayerMask crossHairLayer;
 
-    ParticleSystem laserPS;
+    public ParticleSystem laserPS;
 
     // Start is called before the first frame update
     void Start()

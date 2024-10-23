@@ -11,6 +11,11 @@ public class InventoryManager : MonoBehaviour
     {
     }
 
+    public bool isInUse() {
+        float ys = transform.localScale.y;
+        return ys > 0;
+    }
+
     public void toggleShow() {
         float ys = transform.localScale.y;
         transform.localScale = new Vector3(1, -1 * ys, 1);
